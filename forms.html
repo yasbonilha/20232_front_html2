@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="cor">cor</label>
+        <input type="color" id="color">
+        <label for="estado">estado</label>
+        <select name="estado" id="estado">
+            <!-- id:front end, navegador. name:servidor, geralmente para acharmos quando formos fazer conexão com o java script -->
+            <option value="1">sp</option>
+            <option value="2">rj</option>
+        </select>
+
+        <fieldset>
+            <legend>escolha seu veículo</legend>
+            <input 
+                id="X1"
+                type="radio" 
+                name="veiculo">
+                <label for="X1">X1</label>
+            
+            <input 
+                id="celta"
+                type="radio"
+                name="veiculo">
+                <label for="celta">celta</label>
+    
+            <input 
+                id="nivus"
+                type="radio"
+                name="veiculo">
+                <label for="nivus">nivus</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>quais cores você gosta?</legend>
+            <input 
+                type="checkbox"
+                id="vermelho">
+            <label for="vermelho">vermelho</label>
+            <input 
+                type="checkbox"
+                id="verde">
+            <label for="verde">verde</label>
+
+        </fieldset>
+
+        <input type="submit" value="enviar"></input>
+    </form>
+</body>
+</html>
